@@ -91,7 +91,9 @@ function contains(element) {
   return false;
 }
 
-// Functions used for traversing our list 
+/*
+  Functions used for traversing the list
+*/
 
 function front() {
   this.pos = 0;
@@ -119,4 +121,26 @@ function moveTo(pos) {
 
 function getElement() {
   return this.dataStore[this.pos];
+}
+
+/*
+  Example of how to use the list class
+*/
+
+var courses = new List();
+
+courses.append("CS240");
+courses.append("CS241");
+courses.append("CS370");
+courses.append("STAT332");
+courses.append("STAT333");
+
+names.front(); // move to the front of the list class
+print(names.getElement()); // displays CS240
+
+names.next(); // move to the next element
+print(names.getElement()); // displays CS241
+
+for (courses.front(); courses.currPos() < courses.length(); courses.next()) {
+  print(courses.getElement());
 }

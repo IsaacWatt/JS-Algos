@@ -120,7 +120,7 @@ function moveTo(pos) {
 }
 
 function getElement() {
-  return this.dataStore[this.pos];
+  return this.data[this.pos];
 }
 
 /*

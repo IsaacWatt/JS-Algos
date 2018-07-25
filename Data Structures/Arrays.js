@@ -31,7 +31,7 @@ function Posn(x, y) {
   this.y = y;
 }
 
-var origin = new  Posn(0, 0);
+var origin = new Posn(0, 0);
 var randomPoint = new Posn(39, 10);
 var Pts = [origin, randomPoint];
 

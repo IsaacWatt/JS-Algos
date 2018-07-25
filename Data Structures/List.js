@@ -1,17 +1,20 @@
 /*
 
-List ADT implementation
+List Implementation
 
 */
 
 function List() {
-  this.size = 0;
-  this.data = []; // array of elements
-  this.position = 0; // index of current pos for iteration
 
+  // fields
+  this.size = 0;
+  this.data = [];
+  this.position = 0;
+
+  // methods
   this.clear = clear;
   this.find = find;
-  this.prettyPrint = prettyPrint; // returns the list as a string
+  this.getData = getData;
   this.insert = insert;
   this.append = append;
   this.remove = remove;
@@ -20,11 +23,10 @@ function List() {
   this.prev = prev;
   this.next = next;
   this.length = length;
-  this.curPos = curPos;
+  this.currPos = currPos;
   this.moveTo = moveTo;
   this.getElement = getElement;
   this.contains = contains;
-
 }
 
 /*
@@ -37,6 +39,7 @@ function append(element) {
   ++this.size;
 }
 
+// find: returns the index of the consumed item or -1 if not found
 function find(item) {
   for (var  i = 0; i < this.size; ++i) {
     if (this.data[i] === item) {
@@ -46,7 +49,8 @@ function find(item) {
   return -1;
 }
 
-// Remove: removes an element from the list
+// Remove: removes an element from the list if it exists
+// returns true if element was removed, false if element was not in the list
 function remove(element) {
   var elementIndex = this.find(element);
   if (elementIndex >= 0) {
@@ -62,10 +66,14 @@ function length() {
   return this.length;
 }
 
-function prettyPrint() {
+// getData: returns the List data
+function getData() {
   return this.data;
 }
 
+// insert: inserts 'element' after the element 'after'
+// returns true if this was successful, returns false if 'after'
+// was not found in the List
 function insert(element, after) {
   var insertPos = this.find(after);
   if (insertPos > -1) {
@@ -76,12 +84,15 @@ function insert(element, after) {
   return false;
 }
 
+// clear: reclaims space, and deletes all data in the List
 function clear() {
   delete this.data;
   this.data = [];
   this.size = this.position = 0;
 }
 
+// contains: returns true if 'element' is found in the List
+// false if 'element' is not in the list
 function contains(element) {
   for (var i = 0; i < this.size; ++i) {
     if (this.data[i] == element) {
@@ -135,11 +146,11 @@ courses.append("CS370");
 courses.append("STAT332");
 courses.append("STAT333");
 
-names.front(); // move to the front of the list class
-print(names.getElement()); // displays CS240
+courses.front(); // move to the front of the list class
+print(courses.getElement()); // displays CS240
 
-names.next(); // move to the next element
-print(names.getElement()); // displays CS241
+courses.next(); // move to the next element
+print(courses.getElement()); // displays CS241
 
 for (courses.front(); courses.currPos() < courses.length(); courses.next()) {
   print(courses.getElement());

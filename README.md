@@ -1,7 +1,8 @@
-# JS-Algos
-Practice writing Algos and Data Structures in JavaScript
+# JavaScript Programming Resource
+A resource for learning data structures, algorithms, and design patterns in `JavaScript`. 
 
 ## Table of Contents
 
 - [Data Structures](/content/data-structures)
   - [Arrays](/content/data-structures/arrays.md)
+  - [Lists](/content/data-structures/lists.md)

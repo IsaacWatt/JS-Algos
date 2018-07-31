@@ -157,7 +157,7 @@ function Product(name, price) {
   this.name = name; 
   this.price = price; 
   
-  function getPrice() {
+  this.getPrice = function() {
     return this.price; 
   }
 }
@@ -167,7 +167,7 @@ function Customer(name, shoppingCart) {
   this.name = name; 
   this.shoppingCart = shoppingCart; 
   
-  function getCart() {
+  this.getCart = function () {
     return this.shoppingCart; 
   }
 }
@@ -195,13 +195,13 @@ var jessy = new Customer('Jessy', cart2);
 
 // create our list of Customers 
 var customers = new List(); 
-list.append(jon); 
-list.append(jessy); 
+customers.append(jon); 
+customers.append(jessy); 
 
 function getTotal(customer) {
   var total = 0; 
   var cart = customer.getCart(); 
-  for (cart.first(); cart.currPos() < cart.length(); cart.next() ) {
+  for (cart.front(); cart.currPos() < cart.length(); cart.next() ) {
     total += cart.getElement().getPrice(); 
   }
   return total; 

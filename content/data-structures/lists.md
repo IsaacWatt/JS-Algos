@@ -113,11 +113,11 @@ function end() {
 }
 
 function prev() {
-  if (this.pos > 0) --this.pos;
+  --this.pos;
 }
 
 function next() {
-  if (this.pos < this.size - 1) ++this.pos;
+  ++this.pos;
 }
 
 function currPos() {

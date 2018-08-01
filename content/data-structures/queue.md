@@ -78,6 +78,7 @@ function isEmpty() {
 }
 
 function clear () {
-  this.data.length = 0; 
+  delete this.data;
+  this.data = [];
 }
 ```

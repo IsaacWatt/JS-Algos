@@ -5,7 +5,7 @@ A resource for learning data structures, algorithms, and design patterns in `Jav
 
 - [Data Structures](/content/data-structures)
   - [ ] [Arrays](/content/data-structures/arrays.md)
-  - [ ] [Lists](/content/data-structures/lists.md)
+  - [x] [Lists](/content/data-structures/lists.md)
   - [ ] [Stacks](/content/data-structures/stack.md)
   - [ ] [Queues](/content/data-structures/queue.md)
   - [ ] [Linked Lists](/content/data-structures/linked-lists.md)

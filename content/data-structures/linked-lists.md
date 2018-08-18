@@ -44,4 +44,24 @@ function find (item) {
   }
   return false; 
 }
+
+/* insert a Node containing newEl after the Node containing item */
+function insert(newEl, item) { 
+  var newNode = new Node(newEl); 
+  var current = this.find(item);  
+  newNode.next = current.next; 
+  current.next = newNode; 
+}
+
+function remove(item) {
+  // find the Node before the Node containing item 
+  var prevNode = this.head;
+  while ( (prevNode.next != null) && (prevNode.next.element != item) ) {
+    prevNode = prevNode.next;
+  }
+  
+  if (prevNode.next != null) {
+       prevNode.next = prevNode.next.next;
+   }
+}
 ```

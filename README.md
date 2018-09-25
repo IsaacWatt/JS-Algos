@@ -9,6 +9,7 @@ A resource for learning data structures, algorithms, and design patterns in `Jav
   - [ ] [Stacks](/content/data-structures/stack.md)   
   - [ ] [Queues](/content/data-structures/queue.md)
   - [ ] [Linked Lists](/content/data-structures/linked-lists.md)
+  - [ ] [Trees](/content/data-structures/trees.md)
 - [Design Patterns](/content/design-patterns)   
   :white_check_mark: [Creational](/content/design-patterns/creational.md)  
   :white_check_mark: [Constructor](/content/design-patterns/constructor.md)  

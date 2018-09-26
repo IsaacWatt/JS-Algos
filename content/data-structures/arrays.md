@@ -1,4 +1,11 @@
 # Arrays
+Arrays are commonly known as a linear collection of elements, each being accessible using via indices. JavaScript has a different "type" of array! In JavaScript, an Array is actually a special type of object with indices being property names. Since JavaScript arrays are objects, they are not as efficient as arrays in other programming languages. `Array` is a known JavaScript object, thus there are methods that you can use on an `Array` object. 
+
+Arrays can be instantiated several ways, the simplest is using the [] operator. 
+`var animals = [];`
+You can also use the `Array` constructor, as such: 
+`var numbers = new Array(1,2,3);`
+It is also worth noting, that unlike many other programming languages, JavaScript array elements do not all need to be the same height. 
 
 ### Useful methods to know
 

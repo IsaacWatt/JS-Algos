@@ -32,7 +32,7 @@ function Book(title, numPages, isHeavy ) {
   // fields
   this.title = title; 
   this.numPages = numPages; 
-  this.isHeavy = isHeavy 
+  this.isHeavy = isHeavy;
 }
 
 function Object.prototype.prettyPrint = function() {

@@ -31,6 +31,11 @@ arr.splice(index, num = 1, i1,i2,..,in);
 // i1, .. , in are optional parameters which are the items you would like to add to the array beginning at index
 ```
 ```javascript 
+arr.split(sep, lim); 
+// sep: specifies char or regex to use for splitting the string. If omitted, entire string is returned in an array 
+// lim: specifies the number of splits to perform
+```
+```javascript 
 arr.sort(fn); // sorts arr lexicographically by default, however can consume a compare function, fn, which will determine how
 to order the data. the sort fn may look as follows: 
 function fn(a, b) {
@@ -47,4 +52,42 @@ function fn(a, b) {
 ### Iterator functions 
 it is useful to be able to iterate over all the values in an array. The following section demonstrates useful functions for doing so. 
 ```javascript
+// will console.log every element in an array arr.  
+arr.forEach(function(element) {
+  console.log(element);
+}); 
+
+// allEven = true if every element in arr is even
+var allEven = arr.every(function(element) {
+  return element % 2 == 0; 
+});
+
+// allEven = true if every at least one element in arr is even
+var allEven = arr.some(function(element) {
+  return element % 2 == 0; 
+});
+```
+
+### Arrays in Objects
+We can use arrays to store more complicated data in an object. This way we can add variables associated with our data array, 
+along with define methods to be used on our data. This is best shown with a simple example: 
+
+This is best shown with an example: 
+```javascript
+function temperatures() {
+  this.data = []; 
+  this.add = add; 
+  this.average = average; 
+}
+
+function add(item) {
+  this.data.push(item); 
+}
+function average() {
+  var total = 0; 
+  this.data.forEach( function(element) {
+    total += element; 
+  }); 
+  return total / this.data.length; 
+}
 ```

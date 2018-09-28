@@ -38,7 +38,7 @@ function Book(title, numPages, isHeavy ) {
 function Book.prototype.prettyPrint = function() {
     var weightStr = this.isHeavy ? "is heavy" : "is light"; 
     return this.title + " has " + this.numPages + " pages. It " + weightStr;
-}; 
+}
 ```
 
 Now a single instance of `prettyPrint` will be shared amongst all `Book` objects. 

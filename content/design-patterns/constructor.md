@@ -35,7 +35,7 @@ function Book(title, numPages, isHeavy ) {
   this.isHeavy = isHeavy;
 }
 
-function Object.prototype.prettyPrint = function() {
+function Book.prototype.prettyPrint = function() {
     var weightStr = this.isHeavy ? "is heavy" : "is light"; 
     return this.title + " has " + this.numPages + " pages. It " + weightStr;
 }; 

@@ -11,7 +11,7 @@ through it first. Finally, I will discuss one of my favorite topics in computer 
   :white_check_mark: [Arrays](/content/data-structures/arrays.md)  
   :white_check_mark: [Lists](/content/data-structures/lists.md)   
   :white_check_mark: [Stacks](/content/data-structures/stack.md)   
-  :white_check_mark: [Queues](/content/data-structures/queue.md)
+  :white_check_mark: [Queues](/content/data-structures/queue.md)  
   :white_check_mark: [Linked Lists](/content/data-structures/linked-lists.md)
   - [ ] [Trees](/content/data-structures/trees.md)
   - [ ] [Graphs](content/data-structures/graphs.md)
@@ -19,7 +19,7 @@ through it first. Finally, I will discuss one of my favorite topics in computer 
 ### Algorithms // [Root directory](/content/algorithms)   
 
 #### Mathematical // [Root directory](/content/algorithms/Math)  
-  :white_check_mark: [Factorial](/content/algorithms/Math/factorial.md)  
+  :white_check_mark: [Factorial](/content/algorithms/Math/Factorial/factorial.md)  
 #### Sets
 #### Strings
 #### Searching

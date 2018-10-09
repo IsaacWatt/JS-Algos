@@ -24,7 +24,18 @@ function factorial(n) {
 ```
 This solutions computes the factorial recursively. The runtime of this needs to be looked at a little bit more carefully. For this we will set up a recurrence relation. Notice that each iteration runtime, say `T(n)` depends on `T(n-1)`, in other words,
 ```
+T(1) = 1
+
 T(n)     = T(n-1) + O(1)
+T(n - 1) = [T(n - 2) + O(1)] + O(1)
+T(n - 2) = [[T(n - 3) + O(1)] + O(1)] + O(1)
+
+Notice that T(n - a) = T(n - (a + 1)) + (a + 1)*O(1)
+
+Thus T(n) = T(n - (n - 1)) + ((n - 1) + 1)*O(1)
+          = T(1) + n*O(1)
+          = O(1) + n*O(1)
+          = O(n)
 ```
 Solving this recurrence gives that `T(n) = O(n)` thus our algorithm runs in `O(n)` time (which makes sense).
 Another thing to to note, is that we end up with a "recursion tree" that must push every single call to `factorial` into a "stack" in memory. Since there are n calls to factorial, this tree (more like a linked list) will have height n. Thus we get an additional space complexity of `O(n)`. 

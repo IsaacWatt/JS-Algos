@@ -30,4 +30,5 @@ through it first. Finally, I will discuss one of my favorite topics in computer 
 ### Design Patterns // [Root directory](/content/design-patterns) 
   :white_check_mark: [Creational](/content/design-patterns/creational.md)  
   :white_check_mark: [Constructor](/content/design-patterns/constructor.md)  
-  :white_check_mark: [Singleton](/content/design-patterns/singleton.md)
+  :white_check_mark: [Singleton](/content/design-patterns/singleton.md)  
+  :white_check_mark: [Module](/content/design-patterns/module.md)

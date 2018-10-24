@@ -14,7 +14,8 @@ through it first. Finally, I will discuss one of my favorite topics in computer 
   :white_check_mark: [Queues](/content/data-structures/queue.md)  
   :white_check_mark: [Linked Lists](/content/data-structures/linked-lists.md)  
   :white_check_mark: [Trees](/content/data-structures/trees.md)
-  - [ ] [Graphs](content/data-structures/graphs.md)
+  - [ ] [Graphs](/content/data-structures/graphs.md)
+  - [ ] [Heaps](/content/data-structures/heap.md)
   
 ### Algorithms // [Root directory](/content/algorithms)   
 

@@ -21,6 +21,7 @@ through it first. Finally, I will discuss one of my favorite topics in computer 
 
 #### Mathematical // [Root directory](/content/algorithms/Math)  
   :white_check_mark: [Factorial](/content/algorithms/Math/Factorial/factorial.md)  
+  - [ ] [Bit Manipulation](/content/algorithms/Math/bits.md)
 #### Sets
 #### Strings
 #### Searching

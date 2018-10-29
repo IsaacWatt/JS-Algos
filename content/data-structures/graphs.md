@@ -23,7 +23,7 @@ then the directed graph is considered `strongly connected`.
 #### Verticies
 We will begin by defining out verticies in a `vertex` class similar to our `Node` class from trees and linked lists. Our 
 `vertex` will contain two pieces of data: one for identifying the vertex called `label`, and one for determining if the vertex has been visited called `wasVisited`. We will store a list of verticies in an array, and will reference them in the `Graph` class by their position in the array.
-```
+```javascript
 function Vertex(label) {
   this.label = label;
 }
@@ -34,7 +34,7 @@ function Vertex(label) {
 
 
 #### The Graph Class
-```
+```javascript
 function Graph(v) {
   this.verticies = v; 
   this.edges = 0; 
